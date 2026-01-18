@@ -8,7 +8,7 @@ import os
 # --- CONFIGURATION ---
 # INSTRUCTOR: Paste the Discord Webhook URL here.
 # Guide: Discord Server -> Edit Channel -> Integrations -> Webhooks -> New Webhook
-DISCORD_WEBHOOK_URL = "https://discord.com/api/webhooks/1461161966105264160/bMS5X2IOc84YAIHptY7H1ZvKuJyjdYGzZZ-5d8SCfOuL6Mnb0pFny8MQKs2dPFCY3K_S"
+DISCORD_WEBHOOK_URL = os.environ.get("DISCORD_WEBHOOK_URL")
 
 mcp = FastMCP("Portfolio Watchdog")
 news_db = NewsEngine()
